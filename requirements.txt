@@ -1,0 +1,5 @@
+google-genai==1.2.0
+elevenlabs==2.68.0
+pydantic==2.10.3
+python-dotenv==1.0.1
+typer==0.15.1

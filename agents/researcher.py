@@ -1,0 +1,66 @@
+from google import genai
+from google.genai import types
+from schemas.topic_schema import Topic
+from config.settings import settings
+import json
+
+class ResearcherAgent:
+    def __init__(self):
+        self.api_key = settings.GEMINI_API_KEY
+        if self.api_key:
+            self.client = genai.Client(api_key=self.api_key)
+        else:
+            self.client = None
+
+    def research_topic(self, topic_idea: str, dry_run: bool = False) -> Topic:
+        """
+        Takes a raw topic idea and uses the LLM to structure it into a cohesive Topic schema.
+        """
+        print(f"[Researcher] Researching topic: {topic_idea}")
+        
+        if dry_run or not self.client:
+            print("[Researcher] Dry-run enabled or no API key, returning dummy topic.")
+            return Topic(
+                title=topic_idea,
+                hook=f"Did you know the secret behind {topic_idea}?",
+                mechanism="It uses a magical process to resolve things quickly.",
+                metaphor="Think of it like a post office for the internet.",
+                complexity=5,
+                recommended_format="single_voice"
+            )
+
+        prompt = f"""
+        You are a Staff Software Architect researching topics for a tech video.
+        Take the following topic idea and expand it into a structured video topic format.
+        Provide a catchy hook, a brief mechanism explanation, a visual metaphor, 
+        a complexity rating (1-10), and a recommended format (single_voice, dual_voice, or voiceless_diagram).
+        
+        Topic Idea: {topic_idea}
+        """
+
+        try:
+            response = self.client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=Topic,
+                ),
+            )
+            
+            # The response.text should be a JSON string that we can parse into our Pydantic model
+            topic_data = json.loads(response.text)
+            return Topic(**topic_data)
+        except Exception as e:
+            print(f"[Researcher] Error during API call: {e}")
+            # Fallback
+            return Topic(
+                title=topic_idea,
+                hook="Fallback hook",
+                mechanism="Fallback mechanism",
+                metaphor="Fallback metaphor",
+                complexity=5,
+                recommended_format="single_voice"
+            )
+
+researcher_agent = ResearcherAgent()

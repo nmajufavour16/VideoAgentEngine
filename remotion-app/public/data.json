@@ -1,0 +1,35 @@
+{
+  "title": "Why you should build an MVP (Minimum Viable Product) before writing complex code.",
+  "topic_badge": "Tech Basics",
+  "format": "single_voice",
+  "design_system": {
+    "mode": "dark",
+    "background": "#121212",
+    "text_primary": "#FFFFFF",
+    "accent_color": "#BB86FC",
+    "font_family": "Inter, sans-serif"
+  },
+  "scenes": [
+    {
+      "scene_id": 1,
+      "layout_type": "title_hook",
+      "speaker": "Lead",
+      "voice_id": "nPczCjzI2devNBz1zQrb",
+      "spoken_text": "Did you know the secret behind Why you should build an MVP (Minimum Viable Product) before writing complex code.?",
+      "display_text": "Why you should build an MVP (Minimum Viable Product) before writing complex code.",
+      "ui_elements": {
+        "headline": null,
+        "sub_badge": null,
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": []
+      },
+      "duration_frames": 228,
+      "audio_file_path": "/assets/audio_scene_1.mp3"
+    }
+  ],
+  "entities": [],
+  "timeline": []
+}
