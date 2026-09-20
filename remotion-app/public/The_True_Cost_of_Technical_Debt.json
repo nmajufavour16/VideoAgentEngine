@@ -1,0 +1,182 @@
+{
+  "title": "The True Cost of Technical Debt",
+  "topic_badge": "Software Engineering",
+  "format": "single_voice",
+  "design_system": {
+    "mode": "dark",
+    "background": "#0D1117",
+    "text_primary": "#F0F6FC",
+    "accent_color": "#FF5370",
+    "font_family": "Inter, sans-serif"
+  },
+  "scenes": [
+    {
+      "scene_id": 1,
+      "layout_type": "title_hook",
+      "speaker": "Narrator",
+      "voice_id": "en-US-Neural2-F",
+      "spoken_text": "Technical debt isn't just bad code, it's compounding interest on your team's engineering velocity.",
+      "display_text": "The True Cost of Technical Debt",
+      "ui_elements": {
+        "headline": "The True Cost of Technical Debt",
+        "sub_badge": "Engineering Economics",
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [
+          "Technical Debt",
+          "compounding interest"
+        ],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": null,
+        "bullet_points": null
+      },
+      "duration_frames": 168,
+      "audio_file_path": null
+    },
+    {
+      "scene_id": 2,
+      "layout_type": "icon_grid",
+      "speaker": "Narrator",
+      "voice_id": "en-US-Neural2-F",
+      "spoken_text": "The interest shows up in four major ways: slower feature velocity, security vulnerabilities, team burnout, and unexpected outages.",
+      "display_text": "Where the Debt Accumulates",
+      "ui_elements": {
+        "headline": "Four Hidden Debt Taxes",
+        "sub_badge": "Impact Analysis",
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [
+          "slower feature velocity",
+          "security vulnerabilities"
+        ],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": [
+          "Clock",
+          "ShieldAlert",
+          "UserX",
+          "ZapOff"
+        ],
+        "bullet_points": null
+      },
+      "duration_frames": 216,
+      "audio_file_path": null
+    },
+    {
+      "scene_id": 3,
+      "layout_type": "table_view",
+      "speaker": "Narrator",
+      "voice_id": "en-US-Neural2-F",
+      "spoken_text": "Comparing quick hacks to clean code shows why shortcuts end up costing ten times more in the long run.",
+      "display_text": "Quick Hack vs Refactored Code",
+      "ui_elements": {
+        "headline": "Shortcuts vs Sustainability",
+        "sub_badge": "Cost Comparison",
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [
+          "Shortcuts",
+          "ten times more"
+        ],
+        "table_headers": [
+          "Metric",
+          "Quick Hack",
+          "Clean Code"
+        ],
+        "table_rows": [
+          [
+            "Initial Build",
+            "1 Day",
+            "3 Days"
+          ],
+          [
+            "Monthly Maintenance",
+            "20 Hours",
+            "1 Hour"
+          ],
+          [
+            "Security Risk",
+            "High",
+            "Low"
+          ]
+        ],
+        "icon_list": null,
+        "bullet_points": null
+      },
+      "duration_frames": 228,
+      "audio_file_path": null
+    },
+    {
+      "scene_id": 4,
+      "layout_type": "rule_takeaway",
+      "speaker": "Narrator",
+      "voice_id": "en-US-Neural2-F",
+      "spoken_text": "Always allocate twenty percent of every sprint to refactoring before the interest bankrupts your product.",
+      "display_text": "The 20% Refactoring Rule",
+      "ui_elements": {
+        "headline": "Pay Down Debt Continuously",
+        "sub_badge": "Golden Rule",
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [
+          "twenty percent",
+          "refactoring"
+        ],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": null,
+        "bullet_points": [
+          "Dedicate 20% of sprint capacity to refactoring",
+          "Treat debt as a active balance sheet item",
+          "Automate continuous testing and linting"
+        ]
+      },
+      "duration_frames": 180,
+      "audio_file_path": null
+    }
+  ],
+  "entities": [
+    {
+      "id": "legacy_code",
+      "icon": "Code",
+      "label": "Legacy Codebase"
+    },
+    {
+      "id": "developer",
+      "icon": "User",
+      "label": "Developer Time"
+    },
+    {
+      "id": "outage",
+      "icon": "AlertTriangle",
+      "label": "System Outage"
+    }
+  ],
+  "timeline": [
+    {
+      "step_id": 1,
+      "source_entity": "legacy_code",
+      "target_entity": "developer",
+      "action": "flow",
+      "visual_effect": "pulse",
+      "kinetic_text": "Slowing Down Velocity"
+    },
+    {
+      "step_id": 2,
+      "source_entity": "legacy_code",
+      "target_entity": "outage",
+      "action": "transform",
+      "visual_effect": "shatter",
+      "kinetic_text": "Compounding Failure"
+    }
+  ]
+}

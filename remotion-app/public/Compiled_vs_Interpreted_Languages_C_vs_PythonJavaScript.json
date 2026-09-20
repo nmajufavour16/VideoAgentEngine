@@ -1,0 +1,39 @@
+{
+  "title": "Compiled vs. Interpreted Languages. (C++ vs. Python/JavaScript).",
+  "topic_badge": "Tech Basics",
+  "format": "single_voice",
+  "design_system": {
+    "mode": "dark",
+    "background": "#121212",
+    "text_primary": "#FFFFFF",
+    "accent_color": "#BB86FC",
+    "font_family": "Inter, sans-serif"
+  },
+  "scenes": [
+    {
+      "scene_id": 1,
+      "layout_type": "title_hook",
+      "speaker": "Lead",
+      "voice_id": "nPczCjzI2devNBz1zQrb",
+      "spoken_text": "Fallback hook",
+      "display_text": "Compiled vs. Interpreted Languages. (C++ vs. Python/JavaScript).",
+      "ui_elements": {
+        "headline": null,
+        "sub_badge": null,
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": null,
+        "bullet_points": null
+      },
+      "duration_frames": 30,
+      "audio_file_path": "assets/Compiled_vs_Interpreted_Languages_C_vs_PythonJavaScript_scene_1.mp3"
+    }
+  ],
+  "entities": [],
+  "timeline": []
+}

@@ -1,0 +1,39 @@
+{
+  "title": "SQL vs NoSQL: Choosing the Right Database for Scale",
+  "topic_badge": "Tech Basics",
+  "format": "dual_voice",
+  "design_system": {
+    "mode": "dark",
+    "background": "#121212",
+    "text_primary": "#FFFFFF",
+    "accent_color": "#BB86FC",
+    "font_family": "Inter, sans-serif"
+  },
+  "scenes": [
+    {
+      "scene_id": 1,
+      "layout_type": "title_hook",
+      "speaker": "Lead",
+      "voice_id": "nPczCjzI2devNBz1zQrb",
+      "spoken_text": "Will your database crumble under peak traffic, or are you over-engineering with NoSQL too early?",
+      "display_text": "SQL vs NoSQL: Choosing the Right Database for Scale",
+      "ui_elements": {
+        "headline": null,
+        "sub_badge": null,
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": null,
+        "bullet_points": null
+      },
+      "duration_frames": 180,
+      "audio_file_path": "assets/SQL_vs_NoSQL_Choosing_the_Right_Database_for_Scale_scene_1.mp3"
+    }
+  ],
+  "entities": [],
+  "timeline": []
+}

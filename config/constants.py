@@ -2,8 +2,8 @@
 # Using 'Brian' or similar natural defaults. You can update these with actual ElevenLabs IDs.
 VOICE_IDS = {
     "Lead": "nPczCjzI2devNBz1zQrb",     # Example ElevenLabs ID (Brian)
-    "Expert": "tx3gqvixFvVIVyG7A7iG",   # Example ElevenLabs ID (Liam)
-    "Narrator": "pNInz6obbfDQGcgMyIGb"  # Example ElevenLabs ID (Alice)
+    "Expert": "nPczCjzI2devNBz1zQrb",   # Valid fallback
+    "Narrator": "nPczCjzI2devNBz1zQrb"  # Valid fallback
 }
 
 # The broad topics we want the researcher to select from

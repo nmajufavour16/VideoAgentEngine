@@ -31,15 +31,15 @@ class ElevenLabsClient:
         print(f"[ElevenLabs] Generating audio for voice '{voice_id}'...")
         try:
             # We use the default model 'eleven_multilingual_v2' as it is natural
-            audio = await self.client.generate(
+            audio_generator = self.client.text_to_speech.convert(
                 text=text,
-                voice=voice_id,
-                model="eleven_multilingual_v2"
+                voice_id=voice_id,
+                model_id="eleven_multilingual_v2"
             )
             
             # Since generate returns an async generator, we need to consume it
             audio_bytes = b""
-            async for chunk in audio:
+            async for chunk in audio_generator:
                 audio_bytes += chunk
                 
             os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -54,7 +54,6 @@ class ElevenLabsClient:
             return duration
         except Exception as e:
             print(f"Error generating audio: {e}")
-            word_count = len(text.split())
-            return max(1.0, word_count / 2.5)
+            return None
 
 elevenlabs_client = ElevenLabsClient()

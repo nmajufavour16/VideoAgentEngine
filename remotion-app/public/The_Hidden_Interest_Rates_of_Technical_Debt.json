@@ -1,0 +1,227 @@
+{
+  "title": "The Hidden Interest Rates of Technical Debt",
+  "topic_badge": "Engineering Architecture",
+  "format": "single_voice",
+  "design_system": {
+    "mode": "dark",
+    "background": "#0D1117",
+    "text_primary": "#F0F6FC",
+    "accent_color": "#FF5370",
+    "font_family": "Inter, sans-serif"
+  },
+  "scenes": [
+    {
+      "scene_id": 1,
+      "layout_type": "title_hook",
+      "speaker": "Narrator",
+      "voice_id": "voice_01",
+      "spoken_text": "Think technical debt is just messy code? It's actually compounding interest that quietly kills your engineering velocity.",
+      "display_text": "Technical Debt = Compounding Interest",
+      "ui_elements": {
+        "headline": "The True Cost of Tech Debt",
+        "sub_badge": "Engineering Velocity",
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [
+          "compounding",
+          "interest",
+          "velocity"
+        ],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": null,
+        "bullet_points": null
+      },
+      "duration_frames": 204,
+      "audio_file_path": "assets/The_Hidden_Interest_Rates_of_Technical_Debt_scene_1.mp3"
+    },
+    {
+      "scene_id": 2,
+      "layout_type": "split_screen",
+      "speaker": "Narrator",
+      "voice_id": "voice_01",
+      "spoken_text": "Imagine taking out a high-interest loan to build a house. Over time, your entire budget goes to paying interest instead of adding new rooms.",
+      "display_text": "Shortcuts vs Compounding Debt",
+      "ui_elements": {
+        "headline": "The Payday Loan Metaphor",
+        "sub_badge": "Financial Metaphor",
+        "diagram_type": null,
+        "left_node": "Quick Hacks Today",
+        "right_node": "10x Maintenance Tomorrow",
+        "action_type": "flow",
+        "highlight_words": [
+          "high-interest",
+          "loan",
+          "interest"
+        ],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": null,
+        "bullet_points": null
+      },
+      "duration_frames": 288,
+      "audio_file_path": "assets/The_Hidden_Interest_Rates_of_Technical_Debt_scene_2.mp3"
+    },
+    {
+      "scene_id": 3,
+      "layout_type": "table_view",
+      "speaker": "Narrator",
+      "voice_id": "voice_01",
+      "spoken_text": "Let's compare clean architecture against accumulated debt across key delivery metrics.",
+      "display_text": "Clean Code vs Tech Debt Impact",
+      "ui_elements": {
+        "headline": "Impact on Delivery Metrics",
+        "sub_badge": "Metric Breakdown",
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [
+          "Clean Code",
+          "Tech Debt"
+        ],
+        "table_headers": [
+          "Metric",
+          "Clean Architecture",
+          "Debt-Ridden System"
+        ],
+        "table_rows": [
+          [
+            "Onboarding Time",
+            "2 Days",
+            "3 Weeks"
+          ],
+          [
+            "Regression Risk",
+            "Low",
+            "Critical"
+          ],
+          [
+            "Cycle Time",
+            "Hours",
+            "Weeks"
+          ]
+        ],
+        "icon_list": null,
+        "bullet_points": null
+      },
+      "duration_frames": 132,
+      "audio_file_path": "assets/The_Hidden_Interest_Rates_of_Technical_Debt_scene_3.mp3"
+    },
+    {
+      "scene_id": 4,
+      "layout_type": "icon_grid",
+      "speaker": "Narrator",
+      "voice_id": "voice_01",
+      "spoken_text": "Shortcuts propagate through your entire infrastructure stack, creating friction across every layer.",
+      "display_text": "System-Wide Architectural Friction",
+      "ui_elements": {
+        "headline": "Affected Infrastructure Layers",
+        "sub_badge": "System Impact",
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [
+          "infrastructure",
+          "stack",
+          "friction"
+        ],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": [
+          "Database",
+          "Server",
+          "Shield",
+          "Cloud",
+          "Zap",
+          "GitBranch"
+        ],
+        "bullet_points": null
+      },
+      "duration_frames": 144,
+      "audio_file_path": "assets/The_Hidden_Interest_Rates_of_Technical_Debt_scene_4.mp3"
+    },
+    {
+      "scene_id": 5,
+      "layout_type": "rule_takeaway",
+      "speaker": "Narrator",
+      "voice_id": "voice_01",
+      "spoken_text": "To maintain velocity, pay down high-interest debt early before refactoring costs bankrupt your roadmap.",
+      "display_text": "Refactor Early, Scale Fast",
+      "ui_elements": {
+        "headline": "Golden Rule of Engineering Health",
+        "sub_badge": "Takeaway",
+        "diagram_type": null,
+        "left_node": null,
+        "right_node": null,
+        "action_type": null,
+        "highlight_words": [
+          "Pay down",
+          "early",
+          "roadmap"
+        ],
+        "table_headers": null,
+        "table_rows": null,
+        "icon_list": null,
+        "bullet_points": [
+          "Treat refactoring as routine maintenance",
+          "Quantify debt in sprint planning",
+          "Cap interest before scaling features"
+        ]
+      },
+      "duration_frames": 168,
+      "audio_file_path": "assets/The_Hidden_Interest_Rates_of_Technical_Debt_scene_5.mp3"
+    }
+  ],
+  "entities": [
+    {
+      "id": "codebase",
+      "icon": "Code",
+      "label": "Monolithic Codebase"
+    },
+    {
+      "id": "shortcuts",
+      "icon": "Zap",
+      "label": "Quick Hacks"
+    },
+    {
+      "id": "interest",
+      "icon": "TrendingUp",
+      "label": "Compounding Debt"
+    },
+    {
+      "id": "velocity",
+      "icon": "Activity",
+      "label": "Engineering Velocity"
+    }
+  ],
+  "timeline": [
+    {
+      "step_id": 1,
+      "source_entity": "shortcuts",
+      "target_entity": "codebase",
+      "action": "flow",
+      "visual_effect": "pulse",
+      "kinetic_text": "Shortcuts introduced"
+    },
+    {
+      "step_id": 2,
+      "source_entity": "codebase",
+      "target_entity": "interest",
+      "action": "transform",
+      "visual_effect": "highlight",
+      "kinetic_text": "Interest begins compounding"
+    },
+    {
+      "step_id": 3,
+      "source_entity": "interest",
+      "target_entity": "velocity",
+      "action": "encrypt",
+      "visual_effect": "shatter",
+      "kinetic_text": "Velocity throttled"
+    }
+  ]
+}
